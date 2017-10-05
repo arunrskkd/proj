@@ -37,14 +37,6 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <style>
-    .btn{
-          margin-right: 9px;
-    }
-
-
-
-  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -203,7 +195,7 @@
 
   <!-- =============================================== -->
 
-   <!-- Left side column. contains the sidebar -->
+ <!-- Left side column. contains the sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -286,6 +278,7 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+
   <!-- =============================================== -->
 
   <!-- Content Wrapper. Contains page content -->
@@ -293,58 +286,78 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-       Project list
+       Edit Project
        
       </h1>
-      
+      <ol class="breadcrumb">
+        <li><a href="newproject.html"><i class="fa fa-dashboard"></i> Projects</a></li>
+        <li class="active">Edit Projects </li>
+      </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="box">
-            <div class="box-header">
-              <h3 class="box-title pull-right"><a class="btn btn-block btn-primary " href="createproject.html">Create project</a></h3>
-            </div>
+          <!--   <div class="box-header">
+              <h3 class="box-title">Projects create</h3>
+            </div> -->
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>Sno</th>
-                  <th>Project name</th>
-                  <th>date created</th>
-                  <th>Client name</th>
-                  <th>Assigned to</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Internet
-                    Explorer 4.0
-                  </td>
-                  <td>1.12.2017</td>
-                  <td>Win </td>
-                  <td> melvin</td>
-                  <td> <span  class="btn  btn-primary btn-xs ">completed</span></td>
-                  <td><a href="editproject.html" class="btn btn-social-icon btn-bitbucket"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Internet
-                    
-                  </td>
-                   <td>1.12.2017</td>
-                  <td>Win </td>
-                  <td> melvin</td>
-                  <td><button type="button" class="btn  btn-danger btn-xs col-sm-6">pending</button> </td>
-                 <td><a href="editproject.html" class="btn btn-social-icon btn-bitbucket"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                </tr>
+              <div class="row">
+                <div class="col-sm-12">
+                 
+            
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body row">
+                <div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Project name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Project name" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">Project date</label>
+                  <input type="date" class="form-control" id="exampleInputEmail1" placeholder="date" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">client name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="client name" required>
+                </div>
+               
+                  <div class="form-group col-sm-6">
+                  <label>Assigned to</label>
+                  <select class="form-control" required>
+                    <option>Melvin</option>
+                    <option>bption 2</option>
+                    <option>cption 3</option>
+                    <option>dption 4</option>
+                    <option>eption 5</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="exampleInputEmail1">description</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Project name" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile" >
+
+                  <p class="help-block">Upload related file here.</p>
+                </div>
                 
-                </tfoot>
-              </table>
+               
+              <!-- /.box-body -->
+
+              </div>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+
+                </div>     
+
+             
             </div>
             <!-- /.box-body -->
           </div>
@@ -408,19 +421,7 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
+
 </body>
 </html>
 

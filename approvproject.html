@@ -202,8 +202,7 @@
   </header>
 
   <!-- =============================================== -->
-
-   <!-- Left side column. contains the sidebar -->
+ <!-- Left side column. contains the sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -303,8 +302,7 @@
     <section class="content">
       <div class="box">
             <div class="box-header">
-              <h3 class="box-title pull-right"><a class="btn btn-block btn-primary " href="createproject.html">Create project</a></h3>
-            </div>
+             
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -314,9 +312,8 @@
                   <th>Project name</th>
                   <th>date created</th>
                   <th>Client name</th>
-                  <th>Assigned to</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th>Approve</th>
+                  
                 </tr>
                 </thead>
                 <tbody>
@@ -326,21 +323,32 @@
                     Explorer 4.0
                   </td>
                   <td>1.12.2017</td>
-                  <td>Win </td>
-                  <td> melvin</td>
-                  <td> <span  class="btn  btn-primary btn-xs ">completed</span></td>
-                  <td><a href="editproject.html" class="btn btn-social-icon btn-bitbucket"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Internet
+                  <td>client1</td>
+                  <td><select class="form-control" required>
+                    <option>Aprroved</option>
+                    <option>rejected</option>
+                     <option>Resend</option>
                     
+                    
+                  </select> </td>
+                
+                 
+                </tr>
+               <tr>
+                  <td>1</td>
+                  <td>Internet
+                    Explorer 4.0
                   </td>
-                   <td>1.12.2017</td>
-                  <td>Win </td>
-                  <td> melvin</td>
-                  <td><button type="button" class="btn  btn-danger btn-xs col-sm-6">pending</button> </td>
-                 <td><a href="editproject.html" class="btn btn-social-icon btn-bitbucket"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                  <td>1.12.2017</td>
+                   <td>client1</td>
+                  <td><select class="form-control" required>
+                    <option>Aprroved</option>
+                    <option>rejected</option>
+                     <option>Resend</option>
+                  </select> </td>
+                
+                
+                
                 </tr>
                 
                 </tfoot>
